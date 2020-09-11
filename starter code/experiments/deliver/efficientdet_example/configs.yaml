@@ -1,0 +1,26 @@
+####### DATASET #########
+ANNOTATIONS_PATH_TRAIN :  "data/raw/annotations.csv"
+IMAGES_PATH_TRAIN : "data/raw/images/"
+ANNOTATIONS_PATH_TEST :  "data/raw/annotations.csv"
+IMAGES_PATH_TEST : "data/raw/images/"
+# Shape of images when feeded to the model
+INPUT_SHAPE : [420, 420]
+# Ratio for train and validation split
+TRAIN_VAL_RATIO : 0.8
+# Batch size
+BATCH_SIZE : 6
+
+####### DATA AUGMENTATION #########
+HORIZONTAL_FLIP : True
+VERTICAL_FLIP : True
+GAMMA_CONTRAST : True
+GAMMA_MIN : 0.4
+GAMMA_MAX : 1.6
+ROTATION : True
+ANGLE : 180
+
+####### MODEL & TRAINING #########
+MODEL : "EfficientDet"
+NB_CLASSES : 3
+NUM_EPOCHS : 100
+LR : 0.0001

@@ -1,0 +1,4 @@
+numpy
+jupyter
+scikit-image
+albumentations

@@ -3,10 +3,10 @@ import os
 import numpy as np
 import tensorflow as tf
 
-from data.data_loader import get_dataset
-from models.efficient_det import get_model
-from utils.exp_utils import prepare_experiment
-from utils.model_utils import create_submission
+from detector.data.data_loader import get_dataset
+from detector.models.efficient_det import get_model
+from detector.utils.exp_utils import prepare_experiment
+from detector.utils.model_utils import create_submission
 
 def train(cf):
     # Write your training script here
